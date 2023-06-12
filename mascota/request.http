@@ -1,0 +1,33 @@
+GET http://localhost:8080/mascota/all
+
+###
+
+POST http://localhost:8080/mascota/add
+Content-Type: application/x-www-form-urlencoded
+
+nombre=lulu
+&raza=shitzut
+&propietario=katherine
+###
+
+GET http://localhost:8080/mascota/ver/52
+
+###
+
+PUT http://localhost:8080/mascota/edit
+Content-Type: application/x-www-form-urlencoded
+
+id=52
+&nombre=nigan
+&raza=pitbull
+&propietario=arturo
+###
+
+DELETE http://localhost:8080/mascota/del
+Content-Type: application/x-www-form-urlencoded
+
+id=1
+
+###
+
+GET http://localhost:8080/mascota/get/report
